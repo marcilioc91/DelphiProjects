@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/18 23:09:59.000.987,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/10/18 23:11:04.000.333,D:\Documentos\Estudos\ADS\Delphi\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\FIZZ, BUZZ, FIZZBUZZ\uPrincipal.dfm</Transaction>
+    <Transaction>2021/10/18 23:11:04.000.333,D:\Documentos\Estudos\ADS\Delphi\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\FIZZ, BUZZ, FIZZBUZZ\uPrincipal.pas</Transaction>
+    <Transaction>2021/10/18 23:11:29.000.009,D:\Documentos\Estudos\ADS\Delphi\Project1.dproj=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\FIZZ, BUZZ, FIZZBUZZ\ProjetoFizzBuzz.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
