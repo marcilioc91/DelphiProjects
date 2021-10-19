@@ -1,0 +1,46 @@
+unit uPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    edtL1: TEdit;
+    edtL2: TEdit;
+    edtL3: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+  var
+  lado1, lado2, lado3: Integer;
+begin
+  lado1 := StrToInt(edtL1.Text);
+  lado2 := StrToInt(edtL2.Text);
+  lado3 := StrToInt(edtL3.Text);
+
+  if (lado1 <> null) and (lado2 <> null) and (lado3 <> null) then
+  ShowMessage('Insira um valor em um dos campos!');
+
+end;
+
+end.
