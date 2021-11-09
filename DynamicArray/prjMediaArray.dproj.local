@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/31 15:03:04.000.579,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/11/02 15:09:25.000.606,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/11/02 15:12:08.000.371,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Enums\uPrincipal.dfm=D:\Documentos\Estudos\ADS\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2021/11/02 15:12:08.000.371,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Enums\uPrincipal.pas=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/11/02 15:12:22.000.600,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Enums\pEnum.dproj=D:\Documentos\Estudos\ADS\Delphi\Project1.dproj</Transaction>
+    <Transaction>2021/11/08 23:03:13.000.226,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Enums\pEnum.dproj=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Enums\prjMediaArray.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
