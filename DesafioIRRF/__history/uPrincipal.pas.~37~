@@ -1,0 +1,47 @@
+unit uPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    btnCalcular: TButton;
+    edtSalario: TEdit;
+    memResultado: TMemo;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+function CalculaIRRF(SalarioBase, faixa: Currency): Currency;
+begin
+  Result := 0;
+
+  if SalarioBase <= 1903.98 then
+  Result := 0
+
+  else if SalarioBase <= 2826.65 then
+  Result := (SalarioBase * 0.075) - 142.80
+
+  else if SalarioBase <= 3751.05 then
+  Result := (SalarioBase * 0.15) - 354.80
+
+  else if SalarioBase <= 4664.68 then
+  Result := (SalarioBase * 0.225) - 636.13
+
+  else
+  Result := (SalarioBase * 0.275) - 869.36
+end;
+
+end.
