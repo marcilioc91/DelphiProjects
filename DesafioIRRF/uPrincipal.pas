@@ -15,6 +15,7 @@ type
     procedure btnCalcularClick(Sender: TObject);
   private
     { Private declarations }
+    function CalcularIRRF(salarioBase: Currency): String;
   public
     { Public declarations }
   end;
@@ -27,42 +28,51 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.btnCalcularClick(Sender: TObject);
-
 var
  salarioBase, resultado : Currency;
-
 begin
+  memResultado.Clear;
 
-memResultado.Clear;
+  try
+    salarioBase := StrToCurr(edtSalario.Text);
+    memResultado.Lines.Add(CalcularIRRF(salarioBase));
+  except on E: Exception do
+    ShowMessage('Valor informado inválido!' + #13+#10 + E.Message);
+  end;
 
-  salarioBase := StrToCurr(edtSalario.Text);
+end;
+
+function TForm1.CalcularIRRF(salarioBase: Currency): String;
+var
+  resultado: Currency;
+begin
+  Result := '';
+
+
+
 
   if salarioBase <= 1903.98 then
-  memResultado.Lines.Add('ISENTO.')
-
+    Result := 'ISENTO'
   else if salarioBase <= 2826.65 then
   begin
     resultado := (salarioBase * 0.075) - 142.80;
-    memResultado.Lines.Add('IRFF: R$ ' + FormatFloat('###,###,##0.00', resultado));
+    Result := 'IRFF: R$ ' + FormatFloat('###,###,##0.00', resultado);
   end
-
   else if salarioBase <= 3751.05 then
   begin
     resultado := (salarioBase * 0.15) - 354.80;
-    memResultado.Lines.Add('IRFF: R$ ' + FormatFloat('###,###,##0.00', resultado));
+    Result := 'IRFF: R$ ' + FormatFloat('###,###,##0.00', resultado);
   end
-
   else if salarioBase <= 4664.68 then
   begin
     resultado := (salarioBase * 0.225) - 636.13;
-    memResultado.Lines.Add('IRFF: R$ ' + FormatFloat('###,###,##0.00', resultado));
+    Result := 'IRFF: R$ ' + FormatFloat('###,###,##0.00', resultado);
   end
-
   else
   begin
     resultado := (salarioBase * 0.275) - 869.36;
-    memResultado.Lines.Add('IRFF: R$ ' + FormatFloat('###,###,##0.00', resultado));
-  end
+    Result := 'IRFF: R$ ' + FormatFloat('###,###,##0.00', resultado);
+  end;
 end;
 
 end.
