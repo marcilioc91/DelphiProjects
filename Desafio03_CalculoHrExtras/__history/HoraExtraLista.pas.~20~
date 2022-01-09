@@ -1,0 +1,64 @@
+unit HoraExtraLista;
+
+interface
+uses System.SysUtils, Generics.Collections, uHorasExtras;
+
+type
+  THoraExtraList = class(TObjectList<THorasExtras>)
+    private
+      FHorasExtraCemPorCento: Double;
+      FHorasExtraCinqPorCento: Double;
+      FTotalPagar: Currency;
+    public
+      property HECemPorCento: Double read FHorasExtraCemPorCento write FHorasExtraCemPorCento;
+      property HECinquentaPorCento: Double read FHorasExtraCinqPorCento write FHorasExtraCinqPorCento;
+      property TotalPagar: Currency read FTotalPagar write FTotalPagar;
+
+      constructor Create;
+      destructor Destroy; override;
+
+      procedure ListarValor;
+  end;
+
+implementation
+
+{ THoraExtraList }
+
+constructor THoraExtraList.Create;
+begin
+  inherited;
+end;
+
+destructor THoraExtraList.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure THoraExtraList.ListarValor;
+var
+  HorasExtras: THorasExtras;
+  TotalPagar: Currency;
+  ValorCinqPorCento: Double;
+  ValorCemPorCento: Double;
+begin
+  TotalPagar         := 0.0;
+  ValorCinqPorCento  := 0.0;
+  ValorCemPorCento   := 0.0;
+
+  for HorasExtras in Self do
+  begin
+    if (HorasExtras.domingoFeriado = false) then
+      ValorCinqPorCento  := ValorCinqPorCento  + HorasExtras.horaEmMinutos
+    else
+      ValorCemPorCento := ValorCemPorCento + HorasExtras.horaEmMinutos;
+
+    TotalPagar := TotalPagar + HorasExtras.HorasPagar;
+  end;
+
+  Self.HECemPorCento := (ValorCemPorCento / 60);
+  Self.HECinquentaPorCento  := (ValorCinqPorCento  / 60);
+  Self.TotalPagar            := TotalPagar;
+end;
+
+end.
+

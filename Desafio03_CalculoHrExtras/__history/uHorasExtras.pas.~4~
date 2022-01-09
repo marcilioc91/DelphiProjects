@@ -1,0 +1,25 @@
+unit uHorasExtras;
+
+interface
+
+type
+
+  THorasExtras = class // INÍCIO DA CLASSE
+  private
+    FCodFuncionario : Integer;
+    FData           : String;
+    FDomingoFeriado : Integer;
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    property codigoFuncionario: Integer read FCodFuncionario write FCodFuncionario;
+    property data: String read FData write FData;
+    property domingoFeriado: Integer read FDomingoFeriado write FDomingoFeriado;
+
+
+  end; // FINAL DA CLASSE
+
+implementation
+
+end.

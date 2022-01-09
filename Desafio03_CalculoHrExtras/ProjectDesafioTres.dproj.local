@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/31 15:03:04.000.579,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 20:39:51.000.354,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 20:43:31.000.773,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\uPrincipal.pas=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 20:43:31.000.773,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\uPrincipal.dfm=D:\Documentos\Estudos\ADS\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2022/01/06 20:43:42.000.655,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\ProjectDesafioTres.dproj=D:\Documentos\Estudos\ADS\Delphi\Project1.dproj</Transaction>
+    <Transaction>2022/01/06 22:36:51.000.078,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 22:37:19.000.410,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\uHorasExtras.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\Unit1.pas</Transaction>
+    <Transaction>2022/01/07 01:21:43.000.751,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\Unit1.pas</Transaction>
+    <Transaction>2022/01/07 01:22:52.000.297,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio03_CalculoHrExtras\HoraExtraLista.pas</Transaction>
+  </Transactions>
+</BorlandProject>
