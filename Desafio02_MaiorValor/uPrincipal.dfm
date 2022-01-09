@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Sistema Listar'
   ClientHeight = 300
   ClientWidth = 662
   Color = clBtnFace
@@ -61,22 +61,22 @@ object Form1: TForm1
     TabOrder = 2
   end
   object btnAdicionar: TButton
-    Left = 48
-    Top = 176
+    Left = 8
+    Top = 224
     Width = 75
     Height = 25
     Caption = 'Adicionar'
     TabOrder = 3
     OnClick = btnAdicionarClick
   end
-  object bntListar: TButton
-    Left = 144
-    Top = 176
+  object btnListar: TButton
+    Left = 88
+    Top = 224
     Width = 75
     Height = 25
     Caption = 'Listar'
     TabOrder = 4
-    OnClick = bntListarClick
+    OnClick = btnListarClick
   end
   object mmoAdicionar: TMemo
     Left = 249
@@ -94,13 +94,13 @@ object Form1: TForm1
     ReadOnly = True
     TabOrder = 6
   end
-  object bntSair: TButton
-    Left = 144
-    Top = 248
+  object btnSair: TButton
+    Left = 168
+    Top = 224
     Width = 75
     Height = 25
     Caption = 'Sair'
     TabOrder = 7
-    OnClick = bntSairClick
+    OnClick = btnSairClick
   end
 end

@@ -17,13 +17,13 @@ type
     Label2: TLabel;
     Label3: TLabel;
     btnAdicionar: TButton;
-    bntListar: TButton;
+    btnListar: TButton;
     mmoAdicionar: TMemo;
     mmoListar: TMemo;
-    bntSair: TButton;
+    btnSair: TButton;
     procedure btnAdicionarClick(Sender: TObject);
-    procedure bntSairClick(Sender: TObject);
-    procedure bntListarClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+    procedure btnListarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -97,7 +97,7 @@ begin
   );
 end;
 
-procedure TForm1.bntListarClick(Sender: TObject);
+procedure TForm1.btnListarClick(Sender: TObject);
 begin
   mmoListar.Clear;
   mmoListar.Lines.Add(ProdutosComMaiorValorVendido(ctrlProduto.Listar));
@@ -118,13 +118,13 @@ begin
 //  end;
 
   for produto in lstProduto do
-    Result := Result + IntToStr(produto.codigo) + ', ' +
+    Result := Result + IntToStr(produto.codigo) + ':' +
                        FormatFloat('###,##0.00', produto.qtde * produto.valor) +
                        #13 + #10 + #13;
 
 end;
 
-procedure TForm1.bntSairClick(Sender: TObject);
+procedure TForm1.btnSairClick(Sender: TObject);
 begin
   if Assigned(ctrlProduto) then
     ctrlProduto.DisposeOf;
