@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/31 15:03:04.000.579,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/04 22:19:55.000.243,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/04 22:38:27.000.085,=D:\Documentos\Estudos\ADS\Delphi\Unit2.pas</Transaction>
+    <Transaction>2022/01/04 22:39:30.000.642,D:\Documentos\Estudos\ADS\Delphi\Unit2.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uProduto.pas</Transaction>
+    <Transaction>2022/01/04 22:39:44.000.549,D:\Documentos\Estudos\ADS\Delphi\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uPrincipal.dfm</Transaction>
+    <Transaction>2022/01/04 22:39:44.000.549,D:\Documentos\Estudos\ADS\Delphi\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uPrincipal.pas</Transaction>
+    <Transaction>2022/01/04 22:58:49.000.955,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/04 22:59:00.000.147,D:\Documentos\Estudos\ADS\Delphi\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uProdutoDAO.pas</Transaction>
+    <Transaction>2022/01/04 23:33:33.000.341,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/04 23:33:42.000.992,D:\Documentos\Estudos\ADS\Delphi\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uController.pas</Transaction>
+    <Transaction>2022/01/04 23:40:51.000.528,D:\Documentos\Estudos\ADS\Delphi\Project1.dproj=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uProdutoController.dproj</Transaction>
+    <Transaction>2022/01/04 23:42:09.000.515,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uController.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uProdutoController.pas</Transaction>
+    <Transaction>2022/01/05 00:16:40.000.210,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uProdutoController.pas=</Transaction>
+    <Transaction>2022/01/05 00:17:57.000.470,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uProdutoController.dproj=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\prjProdutoLista.dproj</Transaction>
+    <Transaction>2022/01/05 00:18:08.000.661,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio02_MaiorValor\uProdutoController.pas</Transaction>
+  </Transactions>
+</BorlandProject>

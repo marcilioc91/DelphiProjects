@@ -1,0 +1,43 @@
+unit uController;
+
+interface
+
+uses System.Generics.Collections, uProduto, uProdutoDAO;
+
+type
+  TProdutoController = class
+    private
+      FProdutoDAO: TProdutoDAO;
+    public
+      constructor Create;
+      destructor Destroy;
+
+      procedure Adicionar(produto: TProduto);
+      function Listar: TObjectList<TProduto>;
+  end;
+
+implementation
+
+{ TProdutoController }
+
+procedure TProdutoController.Adicionar(produto: TProduto);
+begin
+
+end;
+
+constructor TProdutoController.Create;
+begin
+
+end;
+
+destructor TProdutoController.Destroy;
+begin
+
+end;
+
+function TProdutoController.Listar: TObjectList<TProduto>;
+begin
+
+end;
+
+end.

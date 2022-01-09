@@ -1,0 +1,16 @@
+unit uCargos;
+
+interface
+
+type
+  TCargo = Class
+    private
+      FCodigo: Integer;
+      FNome: string;
+    public
+
+  End;
+
+implementation
+
+end.

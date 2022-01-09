@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/31 15:03:04.000.579,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 21:16:41.000.747,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 21:42:57.000.426,D:\Documentos\Estudos\ADS\Delphi\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uPrincipal.pas</Transaction>
+    <Transaction>2021/11/28 21:42:57.000.426,D:\Documentos\Estudos\ADS\Delphi\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uPrincipal.dfm</Transaction>
+    <Transaction>2021/11/28 21:43:11.000.577,D:\Documentos\Estudos\ADS\Delphi\Project1.dproj=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\prjAppFolha.dproj</Transaction>
+    <Transaction>2021/11/28 21:43:45.000.680,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit2.pas</Transaction>
+    <Transaction>2021/11/28 21:44:51.000.987,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit2.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uFrmCargos.pas</Transaction>
+    <Transaction>2021/11/28 21:44:51.000.987,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit2.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uFrmCargos.dfm</Transaction>
+    <Transaction>2021/11/28 21:47:56.000.253,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uFrmCargos.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.dfm</Transaction>
+    <Transaction>2021/11/28 21:47:56.000.253,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uFrmCargos.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.pas</Transaction>
+    <Transaction>2021/11/28 22:21:33.000.002,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 22:35:08.000.661,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadBasic.pas</Transaction>
+    <Transaction>2021/11/28 22:35:08.000.661,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadBasic.dfm</Transaction>
+    <Transaction>2021/11/28 22:35:24.000.980,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.pas=</Transaction>
+    <Transaction>2021/11/28 22:37:42.000.769,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 22:42:45.000.185,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.dfm</Transaction>
+    <Transaction>2021/11/28 22:42:45.000.185,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.pas</Transaction>
+    <Transaction>2021/11/28 23:12:19.000.818,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/11/28 23:15:48.000.884,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uDM.pas</Transaction>
+    <Transaction>2021/11/28 23:15:48.000.884,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uDM.dfm</Transaction>
+    <Transaction>2021/12/08 21:24:01.000.129,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 21:26:12.000.520,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Model\uCargos.pas</Transaction>
+    <Transaction>2021/12/08 21:38:01.000.155,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 21:38:12.000.991,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Model\uEventos.pas</Transaction>
+    <Transaction>2021/12/08 21:38:32.000.843,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Model\uCargos.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Model\uCargo.pas</Transaction>
+    <Transaction>2021/12/08 21:38:39.000.573,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Model\uEventos.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Model\uEvento.pas</Transaction>
+    <Transaction>2021/12/08 21:53:14.000.170,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 21:53:29.000.825,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Model\uFuncionario.pas</Transaction>
+    <Transaction>2021/12/08 22:07:13.000.980,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 22:07:58.000.567,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\DAO\uConexao.pas</Transaction>
+    <Transaction>2021/12/08 23:01:25.000.623,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/12/08 23:03:12.000.435,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\DAO\uCargoDAO.pas</Transaction>
+    <Transaction>2021/12/09 00:10:36.000.539,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2021/12/09 00:10:50.000.115,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Controller\uCargoController.pas</Transaction>
+  </Transactions>
+</BorlandProject>

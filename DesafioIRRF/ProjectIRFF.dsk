@@ -15,17 +15,22 @@ File_12=TSourceModule,'D:\Documentos\Estudos\ADS\Delphi\AulaDinho\untCadastroLiv
 File_13=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\source\rtl\common\System.Classes.pas',0,1,7554,1,7574,0,0,,
 
 [Modules]
-Module0=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioINSS\uPrincipal.pas
-Count=1
+Module0=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioIRRF\uPrincipal.pas
+Module1=default.htm
+Count=2
 EditWindowCount=1
 
-[D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioINSS\uPrincipal.pas]
+[D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioIRRF\uPrincipal.pas]
 ModuleType=TSourceModule
 
+[default.htm]
+ModuleType=TURLModule
+
 [EditWindow0]
-ViewCount=1
-CurrentEditView=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioINSS\uPrincipal.pas
+ViewCount=2
+CurrentEditView=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioIRRF\uPrincipal.pas
 View0=0
+View1=1
 PercentageSizes=1
 Create=1
 Visible=1
@@ -56,15 +61,19 @@ BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779F1D00000000000002F206000000000000FFFFFFFF
 
 [View0]
+CustomEditViewType=TWelcomePageView
+WelcomePageURL=bds:/default.htm
+
+[View1]
 CustomEditViewType=TEditView
-Module=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioINSS\uPrincipal.pas
+Module=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioIRRF\uPrincipal.pas
 CursorX=1
-CursorY=35
-TopLine=29
+CursorY=1
+TopLine=13
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioINSS\uPrincipal.pas
+EditViewName=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\DesafioIRRF\uPrincipal.pas
 
 [Watches]
 Count=0
@@ -190,7 +199,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1895
 ClientHeight=4913
-TBDockHeight=6663
+TBDockHeight=9010
 LRDockWidth=1895
 Dockable=1
 StayOnTop=0
@@ -198,7 +207,7 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Caption,
+SelectedItem=Action,
 ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0
 
 [frmDesignPreview]
@@ -210,11 +219,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=6394
+Height=8462
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=6394
+ClientHeight=8462
 TBDockHeight=5962
 LRDockWidth=2512
 Dockable=1
@@ -226,8 +235,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-2296
-Top=245
+Left=0
+Top=0
 Width=273
 Height=365
 MaxLeft=-1
@@ -331,11 +340,11 @@ State=0
 Left=0
 Top=0
 Width=2340
-Height=971
+Height=1212
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2340
-ClientHeight=971
+ClientHeight=1212
 TBDockHeight=2317
 LRDockWidth=2824
 Dockable=1
@@ -396,11 +405,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=6394
+Height=8462
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=6394
+ClientHeight=8462
 TBDockHeight=4885
 LRDockWidth=7148
 Dockable=1
@@ -412,8 +421,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=501
-Top=817
+Left=0
+Top=0
 Width=2855
 Height=3212
 MaxLeft=-1
@@ -431,8 +440,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-250
-Top=-124
+Left=-8
+Top=-8
 Width=1848
 Height=3144
 MaxLeft=-1
@@ -536,11 +545,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=6394
+Height=8462
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=6394
+ClientHeight=8462
 TBDockHeight=4885
 LRDockWidth=5309
 Dockable=1
@@ -600,8 +609,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=28
+Left=8
+Top=8
 Width=3824
 Height=1413
 MaxLeft=-1
@@ -632,7 +641,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
 ClientHeight=4510
-TBDockHeight=6663
+TBDockHeight=9010
 LRDockWidth=1996
 Dockable=1
 StayOnTop=0
@@ -656,7 +665,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1895
 ClientHeight=3471
-TBDockHeight=6663
+TBDockHeight=9010
 LRDockWidth=1895
 Dockable=1
 StayOnTop=0
@@ -680,7 +689,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
 ClientHeight=3875
-TBDockHeight=6663
+TBDockHeight=9010
 LRDockWidth=1996
 Dockable=1
 StayOnTop=0

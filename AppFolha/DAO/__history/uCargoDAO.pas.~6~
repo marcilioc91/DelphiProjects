@@ -1,0 +1,41 @@
+unit uCargoDAO;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
+  FireDAC.Phys.FBDef, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
+  FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  FireDAC.Phys.IBBase, FireDAC.Phys.FB,
+
+  uConexao, UCargo;
+
+type
+  TCargoDAO = Class
+    private
+      FConexao: TConexao;
+      FDQryCargo: TFDQuery;
+    public
+      constructor Create;
+      destructor Destroy; override;
+
+      function Buscar(cargo: TCargo): TCargo;
+  end;
+
+implementation
+
+{ TCargoDAO }
+
+constructor TCargoDAO.Create;
+begin
+  FConexao := TConexao.Create;
+end;
+
+destructor TCargoDAO.Destroy;
+begin
+  inherited Destroy;
+end;
+
+end.

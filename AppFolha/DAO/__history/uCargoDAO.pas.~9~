@@ -1,0 +1,68 @@
+unit uCargoDAO;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
+  FireDAC.Phys.FBDef, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
+  FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  FireDAC.Phys.IBBase, FireDAC.Phys.FB,
+
+  System.Generics.Collections,
+
+  uConexao, uCargo;
+
+type
+  TCargoDAO = Class
+    private
+      FConexao: TConexao;
+      FDQryCargo: TFDQuery;
+    public
+      constructor Create;
+      destructor Destroy; override;
+
+      function Buscar(cargo: TCargo): TCargo;
+      function ListarTodos: TObjectList<TCargo>;
+  end;
+
+implementation
+
+{ TCargoDAO }
+
+function TCargoDAO.Buscar(cargo: TCargo): TCargo;
+begin
+  Result := nil;
+
+  try
+    FDQryCargo.Close;
+    FDQryCargo.SQL.Clear;
+    FDQryCargo.SQL.Add('SELECT nome');
+    FDQryCargo.SQL.Add('  FROM cargo');
+    FDQryCargo.SQL.Add(' WHERE codigo = :codigo');
+    FDQryCargo.ParamByName('codigo').AsInteger := cargo.codigo;
+    FDQryCargo.Open;
+
+    Result.nome := FDQryCargo.FieldByName('nome').AsString;
+  finally
+    FDQryCargo.Close;
+  end;
+end;
+
+constructor TCargoDAO.Create;
+begin
+  FConexao := TConexao.Create;
+end;
+
+destructor TCargoDAO.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TCargoDAO.ListarTodos: TObjectList<TCargo>;
+begin
+
+end;
+
+end.
