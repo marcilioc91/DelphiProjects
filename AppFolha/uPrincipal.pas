@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, uCadEvento;
 
 type
   TFrmPrincipal = class(TForm)
@@ -27,6 +27,7 @@ type
     Folhadepagamento3: TMenuItem;
     Sair2: TMenuItem;
     procedure Cargos1Click(Sender: TObject);
+    procedure Eventos1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,13 +41,39 @@ implementation
 
 {$R *.dfm}
 
-uses uCadCargos;
+uses uCadCargo;
+
+{
+  Requisitos: Criar um sistema para calcular a folha de pagamentos de uma empresa.
+	- Cadastro de cargos: código e nome.
+	- Cadastro de eventos: código, descrição, tipo (desconto/acréscimo).
+	- Tabela de INSS.
+	- Tabela de IRRF.
+	- Cadastro de funcionários: código, nome, data de nascimento, cargo, contato, e-mail, ativo.
+	  * O cadastro de funcionários deve manter o histórico de salários do empregado.
+	- Registrar mudança de salário
+	- Lançar evento para funcionário(s)
+	- Tela de processamento de folha: calcular/recalcular folha de pagamentos para um mês informado.
+		* Consultar dados dos funcionários ativos
+		* Calcular INSS
+		* Calcular IRRF
+		* Verificar Eventos para o mês
+	- Relatório de folha de pagamento.
+	- Relatório de empregados.
+}
 
 procedure TFrmPrincipal.Cargos1Click(Sender: TObject);
 begin
-  FrmCargos := TFrmCargos.Create(Self);
-  FrmCargos.ShowModal;
-  FreeAndNil(FrmCargos);
+  FrmCargo := TFrmCargo.Create(Self);
+  FrmCargo.ShowModal;
+  FreeAndNil(FrmCargo);
+end;
+
+procedure TFrmPrincipal.Eventos1Click(Sender: TObject);
+begin
+ FrmEvento := TFrmEvento.Create(Self);
+ FrmEvento.ShowModal;
+ FreeAndNil(FrmEvento);
 end;
 
 end.

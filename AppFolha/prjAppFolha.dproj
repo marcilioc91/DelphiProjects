@@ -102,25 +102,30 @@
             <Form>FrmPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="uCadBasic.pas">
-            <Form>FrmBasic</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="uCadCargos.pas">
-            <Form>FrmCargos</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="uDM.pas">
-            <Form>DM</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
-        </DCCReference>
         <DCCReference Include="Model\uCargo.pas"/>
         <DCCReference Include="Model\uEvento.pas"/>
         <DCCReference Include="Model\uFuncionario.pas"/>
         <DCCReference Include="DAO\uConexao.pas"/>
         <DCCReference Include="DAO\uCargoDAO.pas"/>
         <DCCReference Include="Controller\uCargoController.pas"/>
+        <DCCReference Include="View\uCadCargo.pas">
+            <Form>FrmCargo</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="View\uCadBasic.pas">
+            <Form>FrmBasic</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="View\uDM.pas">
+            <Form>DM</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="View\uCadEvento.pas">
+            <Form>FrmEvento</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Controller\uEventoController.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

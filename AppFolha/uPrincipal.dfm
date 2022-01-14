@@ -2,8 +2,8 @@ object FrmPrincipal: TFrmPrincipal
   Left = 0
   Top = 0
   Caption = 'FrmPrincipal'
-  ClientHeight = 521
-  ClientWidth = 663
+  ClientHeight = 341
+  ClientWidth = 664
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -26,6 +26,7 @@ object FrmPrincipal: TFrmPrincipal
       end
       object Eventos1: TMenuItem
         Caption = '&Eventos'
+        OnClick = Eventos1Click
       end
       object Funcionarios1: TMenuItem
         Caption = '&Funcion'#225'rios'

@@ -1,0 +1,32 @@
+{
+	"folders": {},
+	"connections": {
+		"jaybird-17e4c0aea2a-465bb572f1379174": {
+			"provider": "jaybird",
+			"driver": "jaybird",
+			"name": "dados.fdb",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3050",
+				"database": "D:\\Documentos\\Estudos\\ADS\\Delphi\\DelphiProjects\\AppFolha\\DB\\dados.fdb",
+				"url": "jdbc:firebirdsql://localhost:3050/D:\\Documentos\\Estudos\\ADS\\Delphi\\DelphiProjects\\AppFolha\\DB\\dados.fdb",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

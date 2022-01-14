@@ -16,8 +16,8 @@
     <Transaction>2021/11/28 22:35:08.000.661,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadBasic.dfm</Transaction>
     <Transaction>2021/11/28 22:35:24.000.980,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.pas=</Transaction>
     <Transaction>2021/11/28 22:37:42.000.769,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
-    <Transaction>2021/11/28 22:42:45.000.185,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.dfm</Transaction>
     <Transaction>2021/11/28 22:42:45.000.185,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.pas</Transaction>
+    <Transaction>2021/11/28 22:42:45.000.185,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uCadCargos.dfm</Transaction>
     <Transaction>2021/11/28 23:12:19.000.818,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
     <Transaction>2021/11/28 23:15:48.000.884,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uDM.pas</Transaction>
     <Transaction>2021/11/28 23:15:48.000.884,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\uDM.dfm</Transaction>
@@ -35,5 +35,17 @@
     <Transaction>2021/12/08 23:03:12.000.435,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\DAO\uCargoDAO.pas</Transaction>
     <Transaction>2021/12/09 00:10:36.000.539,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
     <Transaction>2021/12/09 00:10:50.000.115,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Controller\uCargoController.pas</Transaction>
+    <Transaction>2022/01/12 02:03:34.000.921,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/12 02:09:09.000.612,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uCadCargos.pas</Transaction>
+    <Transaction>2022/01/12 02:09:15.000.486,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uCadBasic.pas</Transaction>
+    <Transaction>2022/01/12 02:09:20.000.780,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uDM.pas</Transaction>
+    <Transaction>2022/01/12 02:10:55.000.261,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/12 02:11:28.000.940,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/12 02:14:24.000.031,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uCadEvento.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/12 02:14:24.000.031,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uCadEvento.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.dfm</Transaction>
+    <Transaction>2022/01/12 02:15:36.000.698,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uCadCargo.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uCadCargos.pas</Transaction>
+    <Transaction>2022/01/12 02:15:36.000.698,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uCadCargo.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\View\uCadCargos.dfm</Transaction>
+    <Transaction>2022/01/12 22:40:18.517,=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/12 22:40:38.379,D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Controller\uEventoController.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

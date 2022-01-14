@@ -3,14 +3,15 @@ unit uCargoDAO;
 interface
 
 uses
-  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  System.Classes, System.Generics.Collections, System.SysUtils,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option,
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
-  FireDAC.Phys.FBDef, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
-  FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  FireDAC.Phys.IBBase, FireDAC.Phys.FB,
 
-  System.Generics.Collections,
+  FireDAC.Comp.Client, FireDAC.DApt, FireDAC.Phys.FBDef, FireDAC.Phys.IBBase,
+  FireDAC.Phys.FB,
+
+  Data.DB,
 
   uConexao, uCargo;
 
@@ -23,8 +24,10 @@ type
       constructor Create;
       destructor Destroy; override;
 
+      procedure Incluir(descricao: String);
       function Buscar(codCargo: Integer): String;
       function ListarTodos: TObjectList<TCargo>;
+      function ListarTodosQry(descricao: String): TFDQuery;
   end;
 
 implementation
@@ -34,6 +37,9 @@ implementation
 constructor TCargoDAO.Create;
 begin
   FConexao := TConexao.Create;
+
+  FDQryCargo := TFDQuery.Create(nil);
+  FDQryCargo.Connection := FConexao.GetConexao;
 end;
 
 function TCargoDAO.Buscar(codCargo: Integer): String;
@@ -45,8 +51,8 @@ begin
     FDQryCargo.SQL.Clear;
     FDQryCargo.SQL.Add('SELECT nome');
     FDQryCargo.SQL.Add('  FROM cargo');
-    FDQryCargo.SQL.Add(' WHERE codigo = :codigo');
-    FDQryCargo.ParamByName('codigo').AsInteger := codCargo;
+    FDQryCargo.SQL.Add(' WHERE codigo = :codCargoParam');
+    FDQryCargo.ParamByName('codCargoParam').AsInteger := codCargo;
     FDQryCargo.Open;
 
     Result := FDQryCargo.FieldByName('nome').AsString;
@@ -59,6 +65,8 @@ function TCargoDAO.ListarTodos: TObjectList<TCargo>;
 var
   cargo: TCargo;
 begin
+  Result := nil;
+
   try
     FDQryCargo.Close;
     FDQryCargo.SQL.Clear;
@@ -93,9 +101,54 @@ begin
   end;
 end;
 
+function TCargoDAO.ListarTodosQry(descricao: String): TFDQuery;
+var
+  codCargo: Integer;
+begin
+  Result := nil;
+
+  try
+    codCargo := StrToInt(descricao);
+  except
+    codCargo := 0;
+  end;
+
+  try
+    FDQryCargo.Close;
+    FDQryCargo.SQL.Clear;
+    FDQryCargo.SQL.Add('SELECT codigo, nome');
+    FDQryCargo.SQL.Add('  FROM cargo');
+    if not (descricao.IsEmpty) then
+    begin
+      FDQryCargo.SQL.Add(' WHERE nome LIKE ' + QuotedStr('%'+descricao+'%'));
+      FDQryCargo.SQL.Add('    OR codigo = ' + IntToStr(codCargo));
+    end;
+    FDQryCargo.SQL.Add(' ORDER BY codigo');
+    FDQryCargo.Open;
+
+    Result := FDQryCargo;
+  finally
+    FDQryCargo.Close;
+  end;
+end;
+
 destructor TCargoDAO.Destroy;
 begin
   inherited Destroy;
+end;
+
+procedure TCargoDAO.Incluir(descricao: String);
+begin
+  try
+    FDQryCargo.Close;
+    FDQryCargo.SQL.Clear;
+    FDQryCargo.SQL.Add('INSERT INTO cargo (nome)');
+    FDQryCargo.SQL.Add('  VALUES (:descCargoParam)');
+    FDQryCargo.ParamByName('descCargoParam').AsString := descricao;
+    FDQryCargo.ExecSQL;
+  except on E: Exception do
+    raise exception ('Erro ao incluir o cargo. ' + E.Message);
+  end;
 end;
 
 end.

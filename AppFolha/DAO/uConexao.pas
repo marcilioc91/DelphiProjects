@@ -3,43 +3,34 @@ unit uConexao;
 interface
 
 uses
-  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option,
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
-  FireDAC.Phys.FBDef, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
-  FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  FireDAC.Phys.IBBase, FireDAC.Phys.FB;
+  FireDAC.Comp.Client, FireDAC.Phys.FBDef,
+  FireDAC.Phys.IBBase, FireDAC.Phys.FB,
+  Data.DB;
 
 type
   TConexao = Class
-    private
-      FDConn: TFDConnection;
-      FDPhysFBDriverLink1: TFDPhysFBDriverLink;
+  private
+    FDConn: TFDConnection;
+    FDPhysFBDriverLink1: TFDPhysFBDriverLink;
 
-      procedure ConfigurarConexao;
+    procedure ConfigurarConexao;
 
-    public
-      constructor Create;
-      destructor Destroy; override;
+  public
+    constructor Create;
+    destructor Destroy; override;
 
-      function GetConexao: TFDConnection;
+    function GetConexao: TFDConnection;
   end;
 
   const
-    BDados = 'D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\DB\Folha.fbd'; //caminho do BD
+    BDados = 'D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\AppFolha\DB\dados.fdb'; //caminho do BD
 
 implementation
 
 { TConexao }
-
-procedure TConexao.ConfigurarConexao;
-begin
-  FDConn.Params.Database := BDados;
-  FDConn.Params.DriverID := 'FB';
-  FDConn.Params.UserName := 'SYSDBA';
-  FDConn.Params.Password := 'masterkey';
-  FDConn.LoginPrompt := false;
-end;
 
 constructor TConexao.Create;
 begin
@@ -55,9 +46,19 @@ begin
   inherited Destroy;
 end;
 
+procedure TConexao.ConfigurarConexao;
+begin
+  FDConn.Params.Database := BDados;
+  FDConn.Params.DriverID := 'FB';
+  FDConn.Params.UserName := 'SYSDBA';
+  FDConn.Params.Password := 'masterkey';
+  FDConn.LoginPrompt     := False;
+end;
+
 function TConexao.GetConexao: TFDConnection;
 begin
   Result := FDConn;
 end;
 
 end.
+
