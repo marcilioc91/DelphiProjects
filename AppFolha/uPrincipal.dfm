@@ -13,6 +13,7 @@ object FrmPrincipal: TFrmPrincipal
   Menu = MainMenu1
   OldCreateOrder = False
   Position = poScreenCenter
+  OnCloseQuery = FormCloseQuery
   PixelsPerInch = 96
   TextHeight = 13
   object MainMenu1: TMainMenu
@@ -30,6 +31,7 @@ object FrmPrincipal: TFrmPrincipal
       end
       object Funcionarios1: TMenuItem
         Caption = '&Funcion'#225'rios'
+        OnClick = Funcionarios1Click
       end
       object Eventos2: TMenuItem
         Caption = '-'
@@ -42,9 +44,6 @@ object FrmPrincipal: TFrmPrincipal
       end
       object N1: TMenuItem
         Caption = '-'
-      end
-      object Sair1: TMenuItem
-        Caption = '&Sair'
       end
     end
     object Processos1: TMenuItem
@@ -70,6 +69,7 @@ object FrmPrincipal: TFrmPrincipal
     end
     object Sair2: TMenuItem
       Caption = '&Sair'
+      OnClick = Sair2Click
     end
   end
 end

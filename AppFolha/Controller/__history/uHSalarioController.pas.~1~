@@ -1,0 +1,76 @@
+unit uHSalarioController;
+
+interface
+
+uses System.Generics.Collections, System.SysUtils,
+     FireDAC.Comp.Client,
+     uHSalario, uHSalarioDAO;
+
+type
+  THSalarioController = class
+  private
+    FHSalarioDAO: THSalarioDAO;
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    procedure Incluir(descricao: String);
+    procedure Alterar(HSalario: THSalario);
+    procedure Excluir(codHSalario: Integer);
+    function Buscar(codHSalario: Integer): String;
+    function ListarTodosQry(descricao: String): TFDQuery;
+  end;
+
+implementation
+
+{ THSalarioController }
+
+constructor THSalarioController.Create;
+begin
+  FHSalarioDAO := THSalarioDAO.Create;
+end;
+
+procedure THSalarioController.Incluir(descricao: String);
+begin
+  if descricao.IsEmpty then
+    raise Exception.Create('Descrição do HSalario não pode ser vazia')
+  else
+    FHSalarioDAO.Incluir(descricao);
+end;
+
+procedure THSalarioController.Alterar(HSalario: THSalario);
+begin
+  if (HSalario.codigo > 0) and (HSalario.nome <> '') then
+    FHSalarioDAO.Alterar(HSalario)
+  else
+    raise Exception.Create('Código informado inválido!');
+end;
+
+procedure THSalarioController.Excluir(codHSalario: Integer);
+begin
+  if codHSalario > 0 then
+    FHSalarioDAO.Excluir(codHSalario)
+  else
+    raise Exception.Create('Código informado inválido!');
+end;
+
+function THSalarioController.Buscar(codHSalario: Integer): String;
+begin
+  if codHSalario > 0 then
+    Result := FHSalarioDAO.Buscar(codHSalario)
+  else
+    raise Exception.Create('Código informado inválido!');
+end;
+
+
+function THSalarioController.ListarTodosQry(descricao: String): TFDQuery;
+begin
+  Result := FHSalarioDAO.ListarTodosQry(descricao);
+end;
+
+destructor THSalarioController.Destroy;
+begin
+  inherited Destroy;
+end;
+
+end.

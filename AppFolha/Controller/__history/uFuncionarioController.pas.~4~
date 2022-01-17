@@ -1,0 +1,23 @@
+unit uFuncionarioController;
+
+interface
+
+uses System.Generics.Collections, System.SysUtils,
+     FireDAC.Comp.Client,
+
+     uFuncionario, uFuncionarioDAO;
+
+type
+  TFuncionarioController = class
+    private
+      FFuncionarioDAO: TFuncionarioDAO;
+    public
+      constructor Create;
+      destructor Destroy; override;
+
+
+  end;
+
+implementation
+
+end.

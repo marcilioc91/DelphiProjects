@@ -1,0 +1,34 @@
+unit uINSS;
+
+interface
+type
+  TINSS = class
+    private
+      FData: TDateTime;
+      FAliquota: Double;
+      FMaximo: Double;
+    public
+      constructor Create;
+      destructor Destroy; override;
+
+      property data: TDateTime read FData write FData;
+      property aliquota: Double read FAliquota write FAliquota;
+      property maximo: Double read FMaximo write FMaximo;
+  end;
+
+implementation
+
+{ TINSS }
+
+constructor TINSS.Create;
+begin
+
+end;
+
+destructor TINSS.Destroy;
+begin
+
+  inherited;
+end;
+
+end.

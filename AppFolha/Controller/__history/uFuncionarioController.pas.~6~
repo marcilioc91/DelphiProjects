@@ -1,0 +1,66 @@
+unit uFuncionarioController;
+
+interface
+
+uses System.Generics.Collections, System.SysUtils,
+     FireDAC.Comp.Client,
+
+     uFuncionario, uFuncionarioDAO;
+
+type
+  TFuncionarioController = class
+    private
+      FFuncionarioDAO: TFuncionarioDAO;
+    public
+      constructor Create;
+      destructor Destroy; override;
+
+      procedure Incluir(funcionario: TFuncionario);
+      procedure Alterar(funcionario: TFuncionario);
+      procedure Excluir(codFuncionario: Integer);
+      function Buscar(codFuncionario: Integer): Tfuncionario;
+      function ListarTodosQry(descricao: String): TFDQuery;
+  end;
+
+implementation
+
+{ TFuncionarioController }
+
+constructor TFuncionarioController.Create;
+begin
+  FFuncionarioDAO := TFuncionarioDAO.Create;
+end;
+
+procedure TFuncionarioController.Incluir(funcionario: TFuncionario);
+begin
+
+end;
+
+function TFuncionarioController.Buscar(codFuncionario: Integer): Tfuncionario;
+begin
+
+end;
+
+procedure TFuncionarioController.Alterar(funcionario: TFuncionario);
+begin
+
+end;
+
+procedure TFuncionarioController.Excluir(codFuncionario: Integer);
+begin
+
+end;
+
+
+function TFuncionarioController.ListarTodosQry(descricao: String): TFDQuery;
+begin
+
+end;
+
+destructor TFuncionarioController.Destroy;
+begin
+
+  inherited Destroy;
+end;
+
+end.

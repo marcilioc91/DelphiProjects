@@ -1,0 +1,79 @@
+unit uINSSDAO;
+
+interface
+
+uses
+  System.Classes, System.Generics.Collections, System.SysUtils,
+
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
+  FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
+  FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.Comp.Client, FireDAC.DApt,
+  FireDAC.Phys.FBDef, FireDAC.Phys.IBBase, FireDAC.Phys.FB,
+
+  Data.DB,
+
+  uConexao, uINSS;
+
+type
+  TINSS = class
+    private
+      FConexao: TConexao;
+      FDQryFuncionario: TFDQuery;
+    public
+      procedure Incluir(inss: TINSS);
+      procedure Alterar(inss: TINSS);
+      procedure Excluir(data: TDateTime);
+      function Buscar(data: TDateTime): TINSS;
+      function ListarTodosQry(data: String): TFDQuery;
+      function Calc(Salario: Currency): Currency;
+    end;
+
+implementation
+
+{ TINSS }
+
+function TINSS.Calc(Salario: Currency): Currency;
+begin
+  Result := 0;
+
+  if Salario <= 0 then
+    raise Exception.Create('Salário deve ser maior que zero.');
+
+  if Salario <= 1100 then
+    Result := Salario * 0.075
+  else if Salario <= 2203.48 then
+    Result := Salario * 0.09
+  else if Salario <= 3305.22 then
+    Result := Salario * 0.12
+  else if Salario <= 6433.57 then
+    Result := Salario * 0.14
+  else
+    Result := 6433.57 * 0.14;
+end;
+
+procedure TINSS.Incluir(inss: TINSS);
+begin
+
+end;
+
+procedure TINSS.Alterar(inss: TINSS);
+begin
+  //TODO: Fazer alteração do INSS
+end;
+
+procedure TINSS.Excluir(data: TDateTime);
+begin
+  //TODO: Fazer exclusão do INSS
+end;
+
+function TINSS.Buscar(data: TDateTime): TINSS;
+begin
+
+end;
+
+function TINSS.ListarTodosQry(data: String): TFDQuery;
+begin
+  //TODO: Fazer listagem de todos os INSS
+end;
+
+end.

@@ -1,0 +1,12 @@
+unit uFuncionarioController;
+
+interface
+
+uses System.Generics.Collections, System.SysUtils,
+     FireDAC.Comp.Client,
+
+     uFuncionario, uFuncionarioDAO;
+
+implementation
+
+end.

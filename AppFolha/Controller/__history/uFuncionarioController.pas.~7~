@@ -1,0 +1,77 @@
+unit uFuncionarioController;
+
+interface
+
+uses System.Generics.Collections, System.SysUtils,
+     FireDAC.Comp.Client,
+
+     uFuncionario, uFuncionarioDAO;
+
+type
+  TFuncionarioController = class
+    private
+      FFuncionarioDAO: TFuncionarioDAO;
+    public
+      constructor Create;
+      destructor Destroy; override;
+
+      procedure Incluir(funcionario: TFuncionario);
+      procedure Alterar(funcionario: TFuncionario);
+      procedure Excluir(codFuncionario: Integer);
+      function Buscar(codFuncionario: Integer): Tfuncionario;
+      function ListarTodosQry(descricao: String): TFDQuery;
+  end;
+
+implementation
+
+{ TFuncionarioController }
+
+constructor TFuncionarioController.Create;
+begin
+  FFuncionarioDAO := TFuncionarioDAO.Create;
+end;
+
+procedure TFuncionarioController.Incluir(funcionario: TFuncionario);
+begin
+  if funcionario.nome.IsEmpty then
+    raise Exception.Create('Descrição do funcionario não pode ser vazia')
+  else
+    FFuncionarioDAO.Incluir(funcionario);
+end;
+
+function TFuncionarioController.Buscar(codFuncionario: Integer): Tfuncionario;
+begin
+  if codFuncionario > 0 then
+    Result := FFuncionarioDAO.Buscar(codFuncionario)
+  else
+    raise Exception.Create('Código informado inválido!');
+end;
+
+procedure TFuncionarioController.Alterar(funcionario: TFuncionario);
+begin
+  if (funcionario.codigo > 0) and (funcionario.nome <> '') then
+    FfuncionarioDAO.Alterar(funcionario)
+  else
+    raise Exception.Create('Código informado inválido!');
+end;
+
+procedure TFuncionarioController.Excluir(codFuncionario: Integer);
+begin
+  if codFuncionario > 0 then
+    FFuncionarioDAO.Excluir(codFuncionario)
+  else
+    raise Exception.Create('Código informado inválido!');
+end;
+
+function TFuncionarioController.ListarTodosQry(descricao: String): TFDQuery;
+begin
+
+end;
+
+destructor TFuncionarioController.Destroy;
+begin
+
+  inherited Destroy;
+end;
+
+end.

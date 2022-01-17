@@ -1,0 +1,80 @@
+unit uPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, uCadEvento, System.Actions,
+  Vcl.ActnList;
+
+type
+  TFrmPrincipal = class(TForm)
+    MainMenu1: TMainMenu;
+    Cadastro1: TMenuItem;
+    Cargos1: TMenuItem;
+    Funcionarios1: TMenuItem;
+    Eventos1: TMenuItem;
+    Eventos2: TMenuItem;
+    TabeladeINSS1: TMenuItem;
+    TabeladeIRRF1: TMenuItem;
+    N1: TMenuItem;
+    Sair1: TMenuItem;
+    Processos1: TMenuItem;
+    MudancaDeSalario1: TMenuItem;
+    Lancareventoparafuncionarios1: TMenuItem;
+    FolhadePagamento1: TMenuItem;
+    Relatorios1: TMenuItem;
+    Folhadepagamento2: TMenuItem;
+    Folhadepagamento3: TMenuItem;
+    Sair2: TMenuItem;
+    procedure Cargos1Click(Sender: TObject);
+    procedure Eventos1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses uCadCargo;
+
+{
+  Requisitos: Criar um sistema para calcular a folha de pagamentos de uma empresa.
+	- Cadastro de cargos: código e nome.
+	- Cadastro de eventos: código, descrição, tipo (desconto/acréscimo).
+	- Tabela de INSS.
+	- Tabela de IRRF.
+	- Cadastro de funcionários: código, nome, data de nascimento, cargo, contato, e-mail, ativo.
+	  * O cadastro de funcionários deve manter o histórico de salários do empregado.
+	- Registrar mudança de salário
+	- Lançar evento para funcionário(s)
+	- Tela de processamento de folha: calcular/recalcular folha de pagamentos para um mês informado.
+		* Consultar dados dos funcionários ativos
+		* Calcular INSS
+		* Calcular IRRF
+		* Verificar Eventos para o mês
+	- Relatório de folha de pagamento.
+	- Relatório de empregados.
+}
+
+procedure TFrmPrincipal.Cargos1Click(Sender: TObject);
+begin
+  FrmCargo := TFrmCargo.Create(Self);
+  FrmCargo.ShowModal;
+  FreeAndNil(FrmCargo);
+end;
+
+procedure TFrmPrincipal.Eventos1Click(Sender: TObject);
+begin
+ FrmEvento := TFrmEvento.Create(Self);
+ FrmEvento.ShowModal;
+ FreeAndNil(FrmEvento);
+end;
+
+end.

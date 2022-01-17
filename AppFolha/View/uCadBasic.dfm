@@ -11,6 +11,7 @@ object FrmBasic: TFrmBasic
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object PageControl1: TPageControl
@@ -32,15 +33,16 @@ object FrmBasic: TFrmBasic
         BevelInner = bvLowered
         TabOrder = 0
         object lblTotalRegistros: TLabel
-          Left = 416
+          Left = 461
           Top = 2
-          Width = 175
+          Width = 130
           Height = 37
-          Margins.Right = 5
           Align = alRight
           Alignment = taRightJustify
-          Caption = 'Registro N de NNN'
+          AutoSize = False
+          Caption = 'Registro N de NNN   '
           Layout = tlCenter
+          ExplicitLeft = 502
         end
         object DBNavigator1: TDBNavigator
           Left = 2
@@ -73,7 +75,6 @@ object FrmBasic: TFrmBasic
         Align = alTop
         BevelInner = bvLowered
         TabOrder = 2
-        ExplicitTop = 8
         object edtBuscar: TEdit
           Left = 13
           Top = 11
@@ -121,6 +122,7 @@ object FrmBasic: TFrmBasic
       Height = 25
       Caption = '&Novo'
       TabOrder = 1
+      OnClick = btnNovoClick
     end
     object btnEditar: TBitBtn
       Left = 5
@@ -129,6 +131,7 @@ object FrmBasic: TFrmBasic
       Height = 25
       Caption = '&Editar'
       TabOrder = 2
+      OnClick = btnEditarClick
     end
     object btnExcluir: TBitBtn
       Left = 5
@@ -137,7 +140,6 @@ object FrmBasic: TFrmBasic
       Height = 25
       Caption = '&Excluir'
       TabOrder = 3
-      OnClick = btnExcluirClick
     end
     object btnCancelar: TBitBtn
       Left = 5
@@ -145,7 +147,9 @@ object FrmBasic: TFrmBasic
       Width = 75
       Height = 25
       Caption = '&Cancelar'
+      Enabled = False
       TabOrder = 4
+      OnClick = btnCancelarClick
     end
     object btnSalvar: TBitBtn
       Left = 5
@@ -153,6 +157,7 @@ object FrmBasic: TFrmBasic
       Width = 75
       Height = 25
       Caption = '&Salvar'
+      Enabled = False
       TabOrder = 5
     end
   end

@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, uCadEvento;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, uCadEvento, System.Actions,
+  Vcl.ActnList, uCadFuncionario;
 
 type
   TFrmPrincipal = class(TForm)
@@ -17,7 +18,6 @@ type
     TabeladeINSS1: TMenuItem;
     TabeladeIRRF1: TMenuItem;
     N1: TMenuItem;
-    Sair1: TMenuItem;
     Processos1: TMenuItem;
     MudancaDeSalario1: TMenuItem;
     Lancareventoparafuncionarios1: TMenuItem;
@@ -28,6 +28,9 @@ type
     Sair2: TMenuItem;
     procedure Cargos1Click(Sender: TObject);
     procedure Eventos1Click(Sender: TObject);
+    procedure Funcionarios1Click(Sender: TObject);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    procedure Sair2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -74,6 +77,27 @@ begin
  FrmEvento := TFrmEvento.Create(Self);
  FrmEvento.ShowModal;
  FreeAndNil(FrmEvento);
+end;
+
+procedure TFrmPrincipal.Funcionarios1Click(Sender: TObject);
+begin
+  FrmFuncionario := TFrmFuncionario.Create(Self);
+  FrmFuncionario.ShowModal;
+  FreeAndNil(FrmFuncionario);
+end;
+
+procedure TFrmPrincipal.Sair2Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TFrmPrincipal.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+begin
+  CanClose := False;
+
+  if Application.MessageBox('Deseja sair do sistema?', 'Aviso do Sistema',
+    MB_ICONWARNING + MB_YESNO) = ID_YES then
+    CanClose := True;
 end;
 
 end.
