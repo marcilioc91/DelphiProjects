@@ -21,14 +21,17 @@ implementation
 
 { TProduto }
 
+{ TProduto }
+
 constructor TProduto.Create;
 begin
-  inherited;
+
 end;
 
 destructor TProduto.Destroy;
 begin
-  inherited Destroy;
+
+  inherited;
 end;
 
 end.

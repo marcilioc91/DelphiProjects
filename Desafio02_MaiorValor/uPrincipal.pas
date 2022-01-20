@@ -110,17 +110,14 @@ var
 begin
   Result := '';
 
-//  for i := 0 to lstProduto.Count - 1 do
-//  begin
-//    Result := Result + IntToStr((lstProduto.Items[i] as TProduto).codigo) + '; ' +
-//                       FormatFloat('###,##0.00', (lstProduto.Items[i] as TProduto).qtde * (lstProduto.Items[i] as TProduto).valor) +
-//                       #13 + #10 + #13;
-//  end;
+  for i := 0 to lstProduto.Count - 1 do
+  begin
+    if produto.codigo = produto.codigo then
+    Result := Result + IntToStr((lstProduto.Items[i] as TProduto).codigo) + '; ' + FormatFloat('###,##0.00', (lstProduto.Items[i] as TProduto).qtde * (lstProduto.Items[i] as TProduto).valor) + #13 + #10 + #13;
+  end;
 
-  for produto in lstProduto do
-    Result := Result + IntToStr(produto.codigo) + ':' +
-                       FormatFloat('###,##0.00', produto.qtde * produto.valor) +
-                       #13 + #10 + #13;
+//  for produto in lstProduto do
+//    Result := Result + IntToStr(produto.codigo) + ':' + FormatFloat('###,##0.00', produto.qtde * produto.valor) + #13 + #10 + #13;
 
 end;
 

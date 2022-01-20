@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/31 15:03:04.000.579,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/13 19:52:36.000.882,=D:\Documentos\Estudos\ADS\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/01/13 20:02:37.000.897,D:\Documentos\Estudos\ADS\Delphi\Unit1.dfm=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio05_SaqueValor\uPrincipal.dfm</Transaction>
+    <Transaction>2022/01/13 20:02:37.000.897,D:\Documentos\Estudos\ADS\Delphi\Unit1.pas=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio05_SaqueValor\uPrincipal.pas</Transaction>
+    <Transaction>2022/01/13 20:02:44.000.307,D:\Documentos\Estudos\ADS\Delphi\Project1.dproj=D:\Documentos\Estudos\ADS\Delphi\DelphiProjects\Desafio05_SaqueValor\ProjectSaque.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

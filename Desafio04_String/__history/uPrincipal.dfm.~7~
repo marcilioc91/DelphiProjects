@@ -1,0 +1,84 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 299
+  ClientWidth = 715
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 42
+    Top = 21
+    Width = 159
+    Height = 19
+    Caption = 'Insira uma palavra:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtFrase: TEdit
+    Left = 8
+    Top = 96
+    Width = 282
+    Height = 33
+    TabOrder = 0
+  end
+  object memExibir: TMemo
+    Left = 296
+    Top = 8
+    Width = 241
+    Height = 265
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Courier'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object memResultado: TMemo
+    Left = 576
+    Top = 8
+    Width = 113
+    Height = 257
+    TabOrder = 2
+  end
+  object btnExibir: TButton
+    Left = 31
+    Top = 168
+    Width = 75
+    Height = 25
+    Caption = 'Exibir'
+    TabOrder = 3
+    OnClick = btnExibirClick
+  end
+  object btnResultado: TButton
+    Left = 112
+    Top = 168
+    Width = 75
+    Height = 25
+    Caption = 'Resultado'
+    TabOrder = 4
+  end
+  object btnSair: TButton
+    Left = 200
+    Top = 168
+    Width = 75
+    Height = 25
+    Caption = 'Sair'
+    TabOrder = 5
+    OnClick = btnSairClick
+  end
+end
